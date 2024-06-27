@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+    <remote name="rel4team" fetch="https://github.com/rel4team/"/>
+    <default remote="rel4team" revision="mi_dev"/>
+    <project name="rel4_kernel.git" path="rel4_kernel"/>
+</manifest>
