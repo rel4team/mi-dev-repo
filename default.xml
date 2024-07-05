@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <manifest>
-    <remote name="rel4team" alias="origin" fetch="."/>    
+    <!-- Remote List -->
+    <remote name="rel4team" alias="origin" fetch="."/>
+    <remote name="nanopb" fetch="https://github.com/nanopb"/>
+    <remote name="opensbi" fetch="https://github.com/riscv"/>
+    <remote name="seL4" fetch="https://github.com/seL4/"/>
+    <!-- Default Settings For Repos -->
     <default remote="rel4team" revision="mi_dev" upstream="mi_dev" dest-branch="mi_dev"/>
+
+    <!-- Base Repository -->
     <project name="rel4_kernel.git" path="rel4_kernel"/>
     <project name="seL4_c_impl.git" path="kernel" />
-    <project name="rust-sel4.git" path="rust-sel4" />
+    <project name="rust-sel4.git" path="rust-sel4">
+        <linkfile src=".cargo" dest=".cargo" />
+    </project>
+    <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
+
+    <!-- Add For Sel4Test -->
+    <!-- Remote: Sel4 Repos -->
+    <project name="musllibc.git" remote="seL4" path="projects/musllibc" revision="3d6b939e8f05cb1d2a1a8c8166609bf2e652e975" upstream="sel4" dest-branch="sel4"/>
+    <project name="seL4_libs.git" remote="seL4" path="projects/seL4_libs" revision="2ca525429e7b4f5abbc1fc694d3aeaff5eb6e7db" upstream="master" dest-branch="master"/>
+    <project name="util_libs.git" remote="seL4" path="projects/util_libs" revision="6e7ba03ed69b33fa6532ca1ef922045bc72fd4ff" upstream="master" dest-branch="master"/>
+    <project name="sel4runtime.git"  remote="seL4" path="projects/sel4runtime" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" upstream="master" dest-branch="master"/>
+    <project name="sel4_projects_libs"  remote="seL4" path="projects/sel4_projects_libs" revision="e13b3fa2fc74190a578f27642ded7e5ab103960e" upstream="master" dest-branch="master"/>
+    
+    <project name="nanopb.git" remote="nanopb" path="tools/nanopb" revision="1466e6f953835b191a7f5acf0c06c941d4cd33d9" upstream="master" dest-branch="refs/tags/0.4.3"/>
+    <project name="opensbi.git" path="tools/opensbi" revision="e9422c49a911397d793f09342c6412dbcacf5550" upstream="v1.0" dest-branch="v1.0"/>
+    <project name="seL4-tools.git" path="tools/seL4" revision="master" upstream="master" dest-branch="master">
+        <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
+        <linkfile src="cmake-tool/griddle" dest="griddle"/>
+    </project>
+    <project name="sel4test.git" path="projects/sel4test" revision="2b63c9183a7aae707004afdbd3157b41aeb3ae7e" upstream="main" dest-branch="main">
+        <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
+    </project>
 </manifest>
 
