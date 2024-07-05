@@ -12,9 +12,7 @@
     <!-- Base Repository -->
     <project name="rel4_kernel.git" path="rel4_kernel"/>
     <project name="seL4_c_impl.git" path="kernel" />
-    <project name="rust-sel4.git" path="rust-sel4">
-        <linkfile src=".cargo" dest=".cargo" />
-    </project>
+    <project name="rust-sel4.git" path="rust-sel4" />
     <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
 
     <!-- Add For Sel4Test -->
