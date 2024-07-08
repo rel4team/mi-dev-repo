@@ -30,7 +30,7 @@
         <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
         <linkfile src="cmake-tool/griddle" dest="griddle"/>
     </project>
-    <project name="sel4test.git" path="projects/sel4test" revision="2b63c9183a7aae707004afdbd3157b41aeb3ae7e" upstream="main" dest-branch="main">
+    <project name="sel4test.git" path="projects/sel4test">
         <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
     </project>
 </manifest>
