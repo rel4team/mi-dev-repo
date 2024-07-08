@@ -14,6 +14,7 @@
     <project name="seL4_c_impl.git" path="kernel" />
     <project name="rust-sel4.git" path="rust-sel4" />
     <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
+    <project name="build-scripts.git" path="build-scripts" />
 
     <!-- Add For Sel4Test -->
     <!-- Remote: Sel4 Repos -->
