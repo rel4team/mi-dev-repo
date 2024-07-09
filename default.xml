@@ -10,11 +10,24 @@
     <default remote="rel4team" revision="mi_dev" upstream="mi_dev" dest-branch="mi_dev"/>
 
     <!-- Base Repository -->
-    <project name="rel4_kernel.git" path="rel4_kernel"/>
+    <project name="rel4_kernel.git" path="rel4_kernel/kernel"/>
     <project name="seL4_c_impl.git" path="kernel" />
     <project name="rust-sel4.git" path="rust-sel4" revision="mi_dev_unstable" upstream="mi_dev_unstable" dest-branch="mi_dev_unstable" />
     <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
     <project name="build-scripts.git" path="build-scripts" />
+
+    <!-- Kernel Modules -->
+    <project name="sel4_common" path="rel4_kernel/sel4_common" />
+    <project name="sel4_cspace" path="rel4_kernel/sel4_cspace" />
+    <project name="sel4_vspace" path="rel4_kernel/sel4_vspace" />
+    <project name="sel4_ipc" path="rel4_kernel/sel4_ipc" />
+    <project name="sel4_task" path="rel4_kernel/sel4_task" />
+
+    <!-- Kernel Modules-driver -->
+    <project name="driver-collect" path="rel4_kernel/driver-collect" />
+    <project name="serial-frame" path="rel4_kernel/serial-frame" />
+    <project name="serial-impl-sbi" path="rel4_kernel/serial-impl/sbi" />
+    <project name="serial-impl-pl011" path="rel4_kernel/serial-impl/pl011" />
 
     <!-- Add For Sel4Test -->
     <!-- Remote: Sel4 Repos -->
