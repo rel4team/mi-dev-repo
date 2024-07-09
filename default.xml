@@ -13,6 +13,7 @@
     <project name="rel4_kernel.git" path="rel4_kernel/kernel">
         <linkfile src=".cargo" dest="rel4_kernel/.cargo" />
         <linkfile src="build.py" dest="rel4_kernel/build.py" />
+        <linkfile src="Cargo.toml.virtual" dest="rel4_kernel/Cargo.toml" />
     </project>
     <project name="seL4_c_impl.git" path="kernel" />
     <project name="rust-sel4.git" path="rust-sel4" revision="mi_dev_unstable" upstream="mi_dev_unstable" dest-branch="mi_dev_unstable" />
