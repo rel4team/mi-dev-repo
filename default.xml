@@ -10,7 +10,10 @@
     <default remote="rel4team" revision="mi_dev" upstream="mi_dev" dest-branch="mi_dev"/>
 
     <!-- Base Repository -->
-    <project name="rel4_kernel.git" path="rel4_kernel/kernel"/>
+    <project name="rel4_kernel.git" path="rel4_kernel/kernel">
+        <linkfile src=".cargo" dest="rel4_kernel/.cargo" />
+        <linkfile src="build.py" dest="rel4_kernel/build.py" />
+    </project>
     <project name="seL4_c_impl.git" path="kernel" />
     <project name="rust-sel4.git" path="rust-sel4" revision="mi_dev_unstable" upstream="mi_dev_unstable" dest-branch="mi_dev_unstable" />
     <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
