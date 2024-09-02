@@ -28,7 +28,7 @@
     
     <project name="nanopb.git" remote="nanopb" path="tools/nanopb" revision="1466e6f953835b191a7f5acf0c06c941d4cd33d9" upstream="master" dest-branch="refs/tags/0.4.3"/>
     <project name="opensbi.git" path="tools/opensbi" revision="e9422c49a911397d793f09342c6412dbcacf5550" upstream="v1.0" dest-branch="v1.0"/>
-    <project name="seL4-tools.git" path="tools/seL4" revision="upstream" upstream="upstream" dest-branch="upstream">
+    <project name="seL4-tools.git" path="tools/seL4" revision="master" upstream="master" dest-branch="master">
         <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
         <linkfile src="cmake-tool/griddle" dest="griddle"/>
     </project>
