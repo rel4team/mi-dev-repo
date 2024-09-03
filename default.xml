@@ -10,7 +10,7 @@
     <default remote="rel4team" revision="mi_dev" upstream="mi_dev" dest-branch="mi_dev"/>
 
     <!-- Base Repository -->
-    <project name="seL4_c_impl.git" path="kernel" />
+    <project name="seL4_c_impl.git" path="kernel" revision="update-kernel" upstream="update-kernel" dest-branch="update-kernel"/>
     <project name="rust-sel4.git" path="rust-sel4" revision="mi_dev_unstable" upstream="mi_dev_unstable" dest-branch="mi_dev_unstable" />
     <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
     <project name="build-scripts.git" path="build-scripts" />
