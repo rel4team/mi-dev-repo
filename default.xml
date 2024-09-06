@@ -21,7 +21,7 @@
     <!-- Add For Sel4Test -->
     <!-- Remote: Sel4 Repos -->
     <project name="musllibc.git" remote="seL4" path="projects/musllibc" revision="9798aedbc3ee5fa3c1d7f788e9312df9203e7b0b" upstream="sel4" dest-branch="sel4"/>
-    <project name="seL4_libs.git" remote="seL4" path="projects/seL4_libs" revision="173c80c7f4da12bbe8330488d5b04267dadf4b57" upstream="master" dest-branch="master"/>
+    <project name="seL4_libs.git" remote="seL4" path="projects/seL4_libs" revision="fcabdef37016cd568a40c82e0d97a264b86ee6d4" upstream="master" dest-branch="master"/>
     <project name="util_libs.git" remote="seL4" path="projects/util_libs" revision="f98dad12344a4c0fecf37bd11c82692ecc7a4a9a" upstream="master" dest-branch="master"/>
     <project name="sel4runtime.git"  remote="seL4" path="projects/sel4runtime" revision="bb75358167fe8bdc0e3df565bb419dc6eb150a60" upstream="master" dest-branch="master"/>
     <project name="sel4_projects_libs"  remote="seL4" path="projects/sel4_projects_libs" revision="97360824eebc80e9a68fef9ef699f3c0ff8bd792" upstream="master" dest-branch="master"/>
