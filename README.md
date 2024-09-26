@@ -6,7 +6,7 @@
 
 ```shell
 # or use https://github.com/rel4team/mi-dev-repo.git
-repo init -u git@github.com:rel4team/mi-dev-repo.git -b update_kernel
+repo init -u git@github.com:rel4team/mi-dev-repo.git
 repo sync
 ```
 
