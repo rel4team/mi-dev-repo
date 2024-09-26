@@ -10,29 +10,29 @@
     <default remote="rel4team" revision="mi_dev" upstream="mi_dev" dest-branch="mi_dev"/>
 
     <!-- Base Repository -->
-    <project name="seL4_c_impl.git" path="kernel" />
+    <project name="seL4_c_impl.git" path="kernel" revision="update-kernel" upstream="update-kernel" dest-branch="update-kernel"/>
     <project name="rust-sel4.git" path="rust-sel4" revision="mi_dev_unstable" upstream="mi_dev_unstable" dest-branch="mi_dev_unstable" />
     <project name="rust-root-task-demo-mi-dev.git" path="root-task-demo" />
-    <project name="build-scripts.git" path="build-scripts" />
+    <project name="build-scripts.git" path="build-scripts"/>
 
     <!-- Kernel Modules -->
-    <project name="mi-dev-integral-rel4" path="rel4_kernel" />
+    <project name="mi-dev-integral-rel4" path="rel4_kernel" revision="update-kernel" upstream="update-kernel" dest-branch="update-kernel" />
 
     <!-- Add For Sel4Test -->
     <!-- Remote: Sel4 Repos -->
-    <project name="musllibc.git" remote="seL4" path="projects/musllibc" revision="3d6b939e8f05cb1d2a1a8c8166609bf2e652e975" upstream="sel4" dest-branch="sel4"/>
-    <project name="seL4_libs.git" remote="seL4" path="projects/seL4_libs" revision="2ca525429e7b4f5abbc1fc694d3aeaff5eb6e7db" upstream="master" dest-branch="master"/>
-    <project name="util_libs.git" remote="seL4" path="projects/util_libs" revision="6e7ba03ed69b33fa6532ca1ef922045bc72fd4ff" upstream="master" dest-branch="master"/>
-    <project name="sel4runtime.git"  remote="seL4" path="projects/sel4runtime" revision="d935dd05da0cf959e9fd0140af913dc6fdaa0221" upstream="master" dest-branch="master"/>
-    <project name="sel4_projects_libs"  remote="seL4" path="projects/sel4_projects_libs" revision="e13b3fa2fc74190a578f27642ded7e5ab103960e" upstream="master" dest-branch="master"/>
+    <project name="musllibc.git" remote="seL4" path="projects/musllibc" revision="9798aedbc3ee5fa3c1d7f788e9312df9203e7b0b" upstream="sel4" dest-branch="sel4"/>
+    <project name="seL4_libs.git" remote="seL4" path="projects/seL4_libs" revision="fcabdef37016cd568a40c82e0d97a264b86ee6d4" upstream="master" dest-branch="master"/>
+    <project name="util_libs.git" remote="seL4" path="projects/util_libs" revision="f98dad12344a4c0fecf37bd11c82692ecc7a4a9a" upstream="master" dest-branch="master"/>
+    <project name="sel4runtime.git"  remote="seL4" path="projects/sel4runtime" revision="bb75358167fe8bdc0e3df565bb419dc6eb150a60" upstream="master" dest-branch="master"/>
+    <project name="sel4_projects_libs"  remote="seL4" path="projects/sel4_projects_libs" revision="97360824eebc80e9a68fef9ef699f3c0ff8bd792" upstream="master" dest-branch="master"/>
     
     <project name="nanopb.git" remote="nanopb" path="tools/nanopb" revision="1466e6f953835b191a7f5acf0c06c941d4cd33d9" upstream="master" dest-branch="refs/tags/0.4.3"/>
     <project name="opensbi.git" path="tools/opensbi" revision="e9422c49a911397d793f09342c6412dbcacf5550" upstream="v1.0" dest-branch="v1.0"/>
-    <project name="seL4-tools.git" path="tools/seL4" revision="master" upstream="master" dest-branch="master">
+    <project name="seL4-tools.git" path="tools/seL4" revision="upstream" upstream="upstream" dest-branch="upstream">
         <linkfile src="cmake-tool/init-build.sh" dest="init-build.sh"/>
         <linkfile src="cmake-tool/griddle" dest="griddle"/>
     </project>
-    <project name="sel4test.git" path="projects/sel4test">
+    <project name="sel4test.git" path="projects/sel4test" revision="upstream-mi-dev" upstream="upstream-mi-dev" dest-branch="upstream-mi-dev">
         <linkfile src="easy-settings.cmake" dest="easy-settings.cmake"/>
     </project>
 </manifest>
