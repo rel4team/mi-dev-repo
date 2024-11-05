@@ -16,7 +16,7 @@
     <project name="build-scripts.git" path="build-scripts" />
 
     <!-- Kernel Modules -->
-    <project name="mi-dev-integral-rel4" path="rel4_kernel" />
+    <project name="mi-dev-integral-rel4" path="rel4_kernel" revision="mcs-support" upstream="mcs-support" dest-branch="mcs-support"/>
 
     <!-- Add For Sel4Test -->
     <!-- Remote: Sel4 Repos -->
